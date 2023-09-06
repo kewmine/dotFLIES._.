@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for WS in $1 $2 $3;
+do
+	hyprctl dispatch workspace $WS
+done

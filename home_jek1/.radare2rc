@@ -1,1 +1,4 @@
-/home/jek1/.radare2rc
+# colors are imported from terminfo
+e scr.color=1
+e cfg.fortunes.type = nsfw,creepy
+
