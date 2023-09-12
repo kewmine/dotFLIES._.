@@ -1,0 +1,28 @@
+#!/bin/bash
+
+userdir=/home/jek1
+gitdir=/home/jek1/git_repos/dotFLIES._./home_jek1
+
+
+function copyto() {
+    case $1 in
+    "home")
+        cp -r \
+            $userdir/$2 \
+            $gitdir 
+        ;;
+
+    "config")
+        cp -r \
+            $userdir/.config/$2 \
+            $gitdir/.config
+        ;;
+    esac
+}
+
+copyto home .zshrc
+copyto home .radare2rc
+copyto home .p10k.zsh
+copyto config hypr
+copyto config fontconfig
+copyto config wofi
